@@ -1,5 +1,5 @@
-<ion-view>
-	<ion-slide-box on-slide-changed="slideHasChanged($index)">
+<ion-view hide-nav-bar="true">
+	<ion-slide-box on-slide-changed="slideHasChanged($index)" class="slider-box">
 	  <ion-slide>
 	    <div class="box" style="background: url('../img/slider1.jpg')">
 	    	
@@ -15,7 +15,7 @@
 	  </ion-slide>
 	</ion-slide-box>
 	<div class="button-slider-container">
-		<button class="button button-transparent button-slider">
+		<button class="button button-transparent button-slider" ng-click="openMenu()">
 	  		Get Started
 		</button
 	</div>

@@ -20,15 +20,59 @@
 	margin: 0 auto;
 	display: block;
 }
-.slider-pager {
-    bottom: 120px;
+.slider-box .slider-pager {
+    bottom: 100px;
  }
  .button-transparent {
- 	background: transparent;
+ 	background: rgba(255,255,255,0.2);
  	border: 1px solid white;
  	color: white!important;
  }
-  .button-transparent:hover {
-  	background: rgba(255,255,255,0.5);
+  .button-transparent.activated {
+  	background: rgba(255,255,255,0.4);
   	color: white!important;
+  }
+  .bar-menuadda {
+  	background-color: #cf000f;
+  	color: white;
+  }
+  .slideB img {
+  	width: 100vw;
+  	height: 200px;
+  }
+  .margin {
+  	margin: 4px 0 0;
+  }
+  .slideC img {
+  	width: 100vw;
+  	height: 170px;
+  }
+  .bar-menuadda .button-clear.button-clear {
+  	color: white;
+  }
+  .item.less-padding {
+  	padding: 2px 2px;
+  }
+  .control-wrap {
+  	text-align: right;
+  }
+  .control-wrap span {
+  	padding: 1px 2px;
+  }
+  .control-wrap span:first-child {
+  	color: green;
+  }
+  .control-wrap span:last-child {
+  	color: red;
+  }
+  .menuadda-card .card {
+  	margin-top: 4px;
+  }
+  .button-menuadda,.button-menuadda.activated {
+  	background-color: #cf000f;
+  	color: white;
+  }
+  .cart-icon {
+  	padding: 5px 5px 1px;
+  	font-size: 22px;
   }

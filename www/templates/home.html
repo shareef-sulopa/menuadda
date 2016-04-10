@@ -1,0 +1,51 @@
+<div class="bar bar-subheader">
+
+</div>
+<ion-view view-title="Paradise">
+	<ion-content class="has-header has-subheader">
+		<div class="home-main-slider margin">
+			<ion-slide-box on-slide-changed="slideHasChanged($index)" does-continue="true" auto-play="true" slide-interval="1500">
+			  <ion-slide>
+			    <div class="slideB"><img src="img/slider1.jpg"></div>
+			  </ion-slide>
+			  <ion-slide>
+			    <div class="slideB"><img src="../img/slider2.jpg"></div>
+			  </ion-slide>
+			  <ion-slide>
+			    <div class="slideB"><img src="img/slider3.jpg"></div>
+			  </ion-slide>
+			</ion-slide-box>
+		</div>
+		
+		<div class="home-second-slider padding">
+			<h4>Popular Dishes</h4>
+			<ion-slide-box on-slide-changed="slideHasChanged($index)" show-pager="false">
+			  <ion-slide>
+			    <div class="slideC" ng-click="showMenu('popular')"><img src="img/slider3.jpg"></div>
+			  </ion-slide>
+			  <ion-slide>
+			    <div class="slideC" ng-click="showMenu('popular')"><img src="../img/slider1.jpg"></div>
+			  </ion-slide>
+			  <ion-slide>
+			    <div class="slideC" ng-click="showMenu('popular')"><img src="img/slider2.jpg"></div>
+			  </ion-slide>
+			</ion-slide-box>
+		</div>
+
+		<div class="home-third-slider padding">
+			<h4>Offers Today</h4>
+			<ion-slide-box on-slide-changed="slideHasChanged($index)" show-pager="false">
+			  <ion-slide>
+			    <div class="slideC" ng-click="showMenu('offers')"><img src="img/slider2.jpg"></div>
+			  </ion-slide>
+			  <ion-slide>
+			    <div class="slideC" ng-click="showMenu('offers')"><img src="../img/slider1.jpg"></div>
+			  </ion-slide>
+			  <ion-slide>
+			    <div class="slideC" ng-click="showMenu('offers')"><img src="img/slider3.jpg"></div>
+			  </ion-slide>
+			</ion-slide-box>
+		</div>
+
+	</ion-content>
+</ion-view>

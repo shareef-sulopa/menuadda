@@ -25,4 +25,27 @@ angular.module('starter.controllers', [])
   $scope.settings = {
     enableFriends: true
   };
+})
+.controller('startCtrl',function($scope,$location,$ionicHistory){
+  $ionicHistory.nextViewOptions({
+    disableBack: true
+  });
+
+  $scope.openMenu = function(){
+    $location.path('/home');
+  }
+})
+.controller('homeCtrl',function($scope,$location,$rootScope){
+
+  $scope.showMenu = function(filterType){
+    $rootScope.filterType = filterType;
+    $location.path('/menu');
+  }
+})
+.controller('menuCtrl',function($scope,$location,$rootScope){
+
+  // $scope.showMenu = function(filterType){
+  //   $rootScope.filterType = filterType;
+  //   $location.path('/menu');
+  // }
 });

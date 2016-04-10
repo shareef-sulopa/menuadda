@@ -34,7 +34,19 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
   // setup an abstract state for the tabs directive
   .state('start', {
     url: '/start',
-    templateUrl: 'templates/start.html'
+    templateUrl: 'templates/start.html',
+    controller: 'startCtrl' 
+  })
+
+  .state('home', {
+    url: '/home',
+    templateUrl: 'templates/home.html',
+    controller: 'homeCtrl'
+  })
+  .state('menu', {
+    url: '/menu',
+    templateUrl: 'templates/menu.html',
+    controller: 'menuCtrl'
   })
 
     .state('tab', {
